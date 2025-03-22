@@ -49,7 +49,7 @@ def play_pronunciation(text, filename="pronunciation.mp3", wav_filename="pronunc
         st.error("⚠️ 無法播放音訊，音檔未正確生成。")
 
 # **使用者選擇題數**
-num_questions = st.number_input("輸入測試題數", min_value=1, max_value=len(word_data), value=5, step=1)
+num_questions = st.number_input("輸入測試題數", min_value=1, max_value=len(word_data), value=10, step=1)
 
 # 選擇測試類型
 test_type = st.radio("請選擇測試類型：", ["拼寫測試", "填空測試"])
