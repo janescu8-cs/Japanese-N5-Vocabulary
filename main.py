@@ -8,10 +8,12 @@ from pydub import AudioSegment
 
 # 匯入所有書籍的單字庫
 from tandem import word_data as tandem_words
+from duolingo import word_data as duolingo_words
 
 # 書籍選擇
 book_options = {
     "Tandem": tandem_words,
+    "Duolingo": duolingo_words,
 }
 
 st.title("📚 日文單字測試遊戲")
